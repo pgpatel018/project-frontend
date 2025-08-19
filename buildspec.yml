@@ -18,6 +18,7 @@ phases:
   post_build:
     commands:
       - echo Build completed. Preparing artifacts...
+      - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
 
 artifacts:
   files:
