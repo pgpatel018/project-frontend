@@ -9,10 +9,9 @@ export const UserProvider = ({ children }) => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch(`${config.apiUrl}/auth`)
         const fetchUser = async () => {
             try {
-                const response = await axios.get(`${config.apiUrl}/auth`, { withCredentials: true });
+                const response = await axios.get(`${config.apiUrl}/auth`);
                 if (response.data.auth) {
                     setUser(response.data.user);
                 } else {
