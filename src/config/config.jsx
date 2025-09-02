@@ -1,5 +1,5 @@
 const config = {
-	apiUrl: "https://api.parthpatel.academy" //has to be changed in production 
+	apiUrl: "https://api.ditee.org" //has to be changed in production 
   };
   
   export default config;
