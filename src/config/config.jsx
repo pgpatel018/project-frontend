@@ -1,5 +1,5 @@
 const config = {
-	apiUrl: "https://api.parthpatel.academy" //has to be changed in production 
+	apiUrl: "https://backendalb-928272699.us-east-1.elb.amazonaws.com" //has to be changed in production 
   };
   
   export default config;
